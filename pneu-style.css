@@ -1,0 +1,36 @@
+*{
+    box-sizing:border-box;
+}
+body{
+    color: #212529;
+}
+.bgd-grey-color{
+    background-color: #d2d2d2;
+}
+.bgd-white-color{
+    background-color: white;
+}
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+ }
+ .border-orange{
+     border: 1px solid #ffc107;
+ }
+
+/* img{
+    height: 150px;
+    width: 100%; 
+    display: block;
+} */
+.width-prix{
+    width: 80px;
+    color: #495057;
+}
+.localisation{
+    width: 120px;
+    color: #495057;
+
+}
