@@ -5,14 +5,1006 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Nouvelle annance</title>
-    <link rel="stylesheet" type="text/css" href="login-style.css">
+    <link rel="stylesheet" type="text/css" href="Newcreation-style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src='Newcreation.js'></script>
+
 </head>
-<body>
-        https://html.com/input-type-image/
+<body class="main-body">
+    
+    <section class="main-section">
+        <div class="container">
+
+        <div class="annonce-title" ><h1>Créer votre annonce ici</h1></div>
+
+        <div class="image">
+            <p>Ajouter des photos:</p>
+            <div class="Neon Neon-theme-dragdropbox">
+                <input style="z-index: 999; opacity: 0; width: 320px; height: 200px; position: absolute; right: 0px; left: 0px; margin-right: auto; margin-left: auto;" name="files[]" id="filer_input2" multiple="multiple" type="file">
+                <div class="Neon-input-dragDrop"><div class="Neon-input-inner"><div class="Neon-input-icon"><i class="fa fa-file-image-o"></i></div><div class="Neon-input-text"><h3>Glisser vos images ici</h3> <span style="display:inline-block; margin: 15px 0">ou</span></div><a class="Neon-input-choose-btn blue">Ajouter fichier</a></div></div>
+            </div>
+        </div>
+
+        <div class="description">
+            <p>Titre:</p>
+            <div class="input-group">
+                <textarea class="form-control" aria-label="With textarea" placeholder="Ajouter une description de votre article" rows="4" ></textarea>
+            </div>
+
+        </div>
+        <div class="row">
+        <div class="col-lg-6">
+        
+            <div class="prix">
+            <p>Définir le prix:</p>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">DT</span>
+                </div>
+                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <div class="input-group-append">
+                    <span class="input-group-text">.00</span>
+                </div>
+            </div>
+        </div>
+        </div>  
+       
+        <div class="col-lg-6">
+
+        <div class="emplacement">
+            <p>Entrer votre emplacement:</p>
+            <div class="form-group">
+                
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Ariana</option>
+                  <option>Béja</option>
+                  <option>Ben Arous</option>
+                  <option>Bizerte</option>
+                  <option>Gabès</option>
+                  <option>Gafsa</option>
+                  <option>Jendouba</option>
+                  <option>Kairouan</option>
+                  <option>Kasserine</option>
+                  <option>Kébeli</option>
+                  <option>Kef</option>
+                  <option>Mahdia</option>
+                  <option>Manouba</option>
+                  <option>Médenine</option>
+                  <option>Monastire</option>
+                  <option>Nabeul</option>
+                  <option>Sfax</option>
+                  <option>Sidi Bouzid</option>
+                  <option>Siliana</option>
+                  <option>Sousse</option>
+                  <option>Tataouine</option>
+                  <option>Tozeur</option>
+                  <option>Tunis</option>
+                  <option>Zaghouan</option>
+                </select>
+            </div>
+        </div>
+        </div>
+        </div>
+        
+        <div class="Categorie">
+            <p>Catégories:</p>
+            <div class="form-group">
+                
+                <select class="form-control" id="categorie" onchange="categ()">
+                  <option>Catégories</option>
+                  <option>Pièces Auto</option>
+                  <option>Pièces Moto</option>
+                  <option>Pneu</option>
+                  <option>Electromenager</option>
+                  <option>Autres</option>
+                </select>
+            </div>
+        </div>
+
+<div class="row" id="pneu-cat">
+    <div class="col-lg-2">    
+        
+        <div class="marque">
+            <p>Marques:</p>
+            <div class="form-group">
+                
+                <select class="form-control" id="exampleFormControlSelect1">
+                        
+                                <option value="">
+                                    <span>Marques</span>
+                                </option>
+                                <option value="APPOLO">
+                                    <span>APPOLO</span>
+                                </option>
+                                <option value="BARUM">
+                                    <span>BARUM</span>
+                                </option>
+                                <option>
+                                    <span>GOODYEAR</span>
+                                </option>
+                                <option value="NEXEN">
+                                    <span>NEXEN</span>
+                                </option>
+                                <option value="SYRON">
+                                    <span>SYRON</span>
+                                </option>
+                                <option value="UNIROYAL">
+                                    <span>UNIROYAL</span>
+                                </option>
+                                <option value="WATERFALL">
+                                    <span>WATERFALL</span>
+                                </option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-2">    
+        <div class="largeur">
+            <p>Largeur:</p>
+            <div class="form-group">
+                
+                <select class="form-control" id="exampleFormControlSelect1">
+                            <option value="">
+                                <span>Largeur</span>
+                            </option>
+                            <option value="105">
+                                <span>105</span>
+                            </option>
+                            <option value="115">
+                                <span>115</span>
+                            </option>
+                            <option value="125">
+                                <span class=>125</span>
+                            </option>
+                            <option value="135">
+                                <span>135</span>
+                            </option>
+                            <option value="140">
+                                <span>140</span>
+                            </option>
+                            <option value="145">
+                                <span>145</span>
+                            </option>
+                            <option value="155">
+                                <span>155</span>
+                            </option>
+                            <option value="160">
+                                <span>160</span>
+                            </option>
+                            <option value="165">
+                                <span>165</span>
+                            </option>
+                            <option value="175">
+                                <span>175</span>
+                            </option>
+                            <option value="185">
+                                <span>185</span>
+                            </option>
+                            <option value="190">
+                                <span>190</span>
+                            </option>
+                            <option value="195">
+                                <span>195</span>
+                            </option>
+                            <option value="205">
+                                <span>205</span>
+                            </option>
+                            <option value="210">
+                                <span>210</span>
+                            </option>
+                            <option value="215">
+                                <span>215</span>
+                            </option>
+                            <option value="225">
+                                <span>225</span>
+                            </option>
+                            <option value="235">
+                                <span>235</span>
+                            </option>
+                            <option value="240">
+                                <span>240</span>
+                            </option>
+                            <option value="245">
+                                <span>245</span>
+                            </option>
+                            <option value="250">
+                                <span>250</span>
+                            </option>
+                            <option value="255">
+                                <span>255</span>
+                            </option>
+                            <option value="265">
+                                <span>265</span>
+                            </option>
+                            <option value="275">
+                                <span>275</span>
+                            </option>
+                            <option value="280">
+                                <span>280</span>
+                            </option>
+                            <option value="285">
+                                <span>285</span>
+                            </option>
+                            <option value="295">
+                                <span>295</span>
+                            </option>
+                            <option value="300">
+                                <span>300</span>
+                            </option>
+                            <option value="305">
+                                <span>305</span>
+                            </option>
+                            <option value="315">
+                                <span>315</span>
+                            </option>
+                            <option value="325">
+                                <span>325</span>
+                            </option>
+                            <option value="335">
+                                <span>335</span>
+                            </option>
+                            <option value="345">
+                                <span>345</span>
+                            </option>
+                            <option value="355">
+                                <span>355</span>
+                            </option>
+                            <option value="550">
+                                <span>550</span>
+                            </option>
+                            <option value="640">
+                                <span>640</span>
+                            </option>
+                            <option value="650">
+                                <span>650</span>
+                            </option>
+                            <option value="700">
+                                <span>700</span>
+                            </option>
+                            <option value="750">
+                                <span>750</span>
+                            </option>
+                            <option value="950">
+                                <span>950</span>
+                            </option>
+                            <option value="4.75">
+                                <span>4.75</span>
+                            </option>
+                            <option value="5">
+                                <span>5</span>
+                            </option>
+                            <option value="5.5">
+                                <span>5.5</span>
+                            </option>
+                            <option value="6">
+                                <span>6</span>
+                            </option>
+                            <option value="6.4">
+                                <span>6.4</span>
+                            </option>
+                            <option value="7">
+                                <span>7</span>
+                            </option>
+                            <option value="7.5">
+                                <span>7.5</span>
+                            </option>
+                            <option value="8.2">
+                                <span>8.2</span>
+                            </option>
+                            <option value="10">
+                                <span>10</span>
+                            </option>
+                            <option value="10.5">
+                                <span>10.5</span>
+                            </option>
+                            <option value="11">
+                                <span>11</span>
+                            </option>
+                            <option value="11.5">
+                                <span>11.5</span>
+                            </option>
+                            <option value="12">
+                                <span>12</span>
+                            </option>
+                            <option value="12.5">
+                                <span>12.5</span>
+                            </option>
+                            <option value="13">
+                                <span>13</span>
+                            </option>
+                            <option value="15">
+                                <span>15</span>
+                            </option>
+                            <option value="16">
+                                <span>16</span>
+                            </option>
+                            <option value="17">
+                                <span>17</span>
+                            </option>
+                            <option value="18">
+                                <span>18</span>
+                            </option>
+                            <option value="30">
+                                <span>30</span>
+                            </option>
+                            <option value="31">
+                                <span>31</span>
+                            </option>
+                            <option value="32">
+                                <span>32</span>
+                            </option>
+                            <option value="33">
+                                <span>33</span>
+                            </option>
+                            <option value="35">
+                                <span>35</span>
+                            </option>
+                </select>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-lg-2">
+        <div class="hauteur">
+            <p>Hauteur:</p>
+            <div class="form-group">
+                    <select class="form-control" id="exampleFormControlSelect1">
+                            <option value="">
+                                <span>Hauteur</span>
+                            </option>
+                            <option value="25">
+                                <span>25</span>
+                            </option>
+                            <option value="30">
+                                <span>30</span>
+                            </option>
+                            <option value="31">
+                                <span>31</span>
+                            </option>
+                            <option value="35">
+                                <span>35</span>
+                            </option>
+                            <option value="40">
+                                <span>40</span>
+                            </option>
+                            <option value="45">
+                                <span>45</span>
+                            </option>
+                            <option value="50">
+                                <span>50</span>
+                            </option>
+                            <option value="53">
+                                <span>53</span>
+                            </option>
+                            <option value="55">
+                                <span>55</span>
+                            </option>
+                            <option value="58">
+                                <span>58</span>
+                            </option>
+                            <option value="60">
+                                <span>60</span>
+                            </option>
+                            <option value="65">
+                                <span>65</span>
+                            </option>
+                            <option value="70">
+                                <span>70</span>
+                            </option>
+                            <option value="75">
+                                <span>75</span>
+                            </option>
+                            <option value="80">
+                                <span>80</span>
+                            </option>
+                            <option value="81">
+                                <span>81</span>
+                            </option>
+                            <option value="85">
+                                <span>85</span>
+                            </option>
+                            <option value="90">
+                                <span>90</span>
+                            </option>
+                            <option value="100">
+                                <span>100</span>
+                            </option>
+                            <option value="510">
+                                <span>510</span>
+                            </option>
+                            <option value="580">
+                                <span>580</span>
+                            </option>
+                            <option value="600">
+                                <span>600</span>
+                            </option>
+                            <option value="625">
+                                <span>625</span>
+                            </option>
+                            <option value="650">
+                                <span>650</span>
+                            </option>
+                            <option value="680">
+                                <span>680</span>
+                            </option>
+                            <option value="1050">
+                                <span>1050</span>
+                            </option>
+                            <option value="1150">
+                                <span>1150</span>
+                            </option>
+                            <option value="1250">
+                                <span>1250</span>
+                            </option>
+                            <option value="0">
+                                <span>0</span>
+                            </option>
+                            <option value="9.5">
+                                <span>9.5</span>
+                            </option>
+                            <option value="10.5">
+                                <span>10.5</span>
+                            </option>
+                            <option value="11.5">
+                                <span>11.5</span>
+                            </option>
+                            <option value="12.5">
+                                <span>12.5</span>
+                            </option>
+                            <option value="16">
+                                <span>16</span>
+                            </option>
+                    </select>
+
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-lg-2">
+        <div class="diametre">
+            <p>Diamètre:</p>
+            <div class="form-group">
+                <select class="form-control" id="exampleFormControlSelect1">
+                        <option value="">
+                                <span>Diamètre</span>
+                            </option>
+                            <option value="0">
+                                <span>0</span>
+                            </option>
+                            <option value="10">
+                                <span>10</span>
+                            </option>
+                            <option value="12">
+                                <span>12</span>
+                            </option>
+                            <option value="13">
+                                <span>13</span>
+                            </option>
+                            <option value="14">
+                                <span>14</span>
+                            </option>
+                            <option value="15">
+                                <span>15</span>
+                            </option>
+                            <option value="16">
+                                <span>16</span>
+                            </option>
+                            <option value="17">
+                                <span>17</span>
+                            </option>
+                            <option value="18">
+                                <span>18</span>
+                            </option>
+                            <option value="19">
+                                <span>19</span>
+                            </option>
+                            <option value="20">
+                                <span>20</span>
+                            </option>
+                            <option value="21">
+                                <span>21</span>
+                            </option>
+                            <option value="22">
+                                <span>22</span>
+                            </option>
+                            <option value="23">
+                                <span>23</span>
+                            </option>
+                            <option value="24">
+                                <span>24</span>
+                            </option>
+                            <option value="40">
+                                <span>40</span>
+                            </option>
+                            <option value="45">
+                                <span>45</span>
+                            </option>
+                            <option value="400">
+                                <span>400</span>
+                            </option>
+                            <option value="415">
+                                <span>415</span>
+                            </option>
+                </select>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-lg-2">   
+        <div class="charge">
+            <p>Charge:</p>
+            <div class="form-group">
+                <select class="form-control" id="exampleFormControlSelect1">
+                        <option value="">
+                                <span>Charge</span>
+                            </option>
+                            <option value="100">
+                                <span>100</span>
+                            </option>
+                            <option value="100/9">
+                                <span>100/9</span>
+                            </option>
+                            <option value="100/97">
+                                <span>100/97</span>
+                            </option>
+                            <option value="100/98">
+                                <span>100/98</span>
+                            </option>
+                            <option value="101">
+                                <span>101</span>
+                            </option>
+                            <option value="101/99">
+                                <span>101/99</span>
+                            </option>
+                            <option value="102">
+                                <span>102</span>
+                            </option>
+                            <option value="102/100">
+                                <span>102/100</span>
+                            </option>
+                            <option value="102/104">
+                                <span>102/104</span>
+                            </option>
+                            <option value="102/9">
+                                <span>102/9</span>
+                            </option>
+                            <option value="103">
+                                <span>103</span>
+                            </option>
+                            <option value="103/101">
+                                <span>103/101</span>
+                            </option>
+                            <option value="103/102">
+                                <span>103/102</span>
+                            </option>
+                            <option value="104">
+                                <span>104</span>
+                            </option>
+                            <option value="104/1">
+                                <span>104/1</span>
+                            </option>
+                            <option value="104/101">
+                                <span>104/101</span>
+                            </option>
+                            <option value="104/102">
+                                <span>104/102</span>
+                            </option>
+                            <option value="105">
+                                <span>105</span>
+                            </option>
+                            <option value="105/103">
+                                <span>105/103</span>
+                            </option>
+                            <option value="105/107">
+                                <span>105/107</span>
+                            </option>
+                            <option value="106">
+                                <span>106</span>
+                            </option>
+                            <option value="106/1">
+                                <span>106/1</span>
+                            </option>
+                            <option value="106/103">
+                                <span>106/103</span>
+                            </option>
+                            <option value="106/104">
+                                <span>106/104</span>
+                            </option>
+                            <option value="107">
+                                <span>107</span>
+                            </option>
+                            <option value="107/1">
+                                <span>107/1</span>
+                            </option>
+                            <option value="107/103">
+                                <span>107/103</span>
+                            </option>
+                            <option value="107/105">
+                                <span>107/105</span>
+                            </option>
+                            <option value="107/109">
+                                <span>107/109</span>
+                            </option>
+                            <option value="108">
+                                <span>108</span>
+                            </option>
+                            <option value="108/1">
+                                <span>108/1</span>
+                            </option>
+                            <option value="108/104">
+                                <span>108/104</span>
+                            </option>
+                            <option value="108/106">
+                                <span>108/106</span>
+                            </option>
+                            <option value="108/107">
+                                <span>108/107</span>
+                            </option>
+                            <option value="109">
+                                <span>109</span>
+                            </option>
+                            <option value="109/1">
+                                <span>109/1</span>
+                            </option>
+                            <option value="109/107">
+                                <span>109/107</span>
+                            </option>
+                            <option value="110">
+                                <span>110</span>
+                            </option>
+                            <option value="110/1">
+                                <span>110/1</span>
+                            </option>
+                            <option value="110/107">
+                                <span>110/107</span>
+                            </option>
+                            <option value="110/108">
+                                <span>110/108</span>
+                            </option>
+                            <option value="110/112">
+                                <span>110/112</span>
+                            </option>
+                            <option value="111">
+                                <span>111</span>
+                            </option>
+                            <option value="111/108">
+                                <span>111/108</span>
+                            </option>
+                            <option value="111/109">
+                                <span>111/109</span>
+                            </option>
+                            <option value="112">
+                                <span>112</span>
+                            </option>
+                            <option value="112/1">
+                                <span>112/1</span>
+                            </option>
+                            <option value="112/109">
+                                <span>112/109</span>
+                            </option>
+                            <option value="112/110">
+                                <span>112/110</span>
+                            </option>
+                            <option value="113">
+                                <span>113</span>
+                            </option>
+                            <option value="113/111">
+                                <span>113/111</span>
+                            </option>
+                            <option value="113/115">
+                                <span>113/115</span>
+                            </option>
+                            <option value="114">
+                                <span>114</span>
+                            </option>
+                            <option value="114/110">
+                                <span>114/110</span>
+                            </option>
+                            <option value="114/111">
+                                <span>114/111</span>
+                            </option>
+                            <option value="115">
+                                <span>115</span>
+                            </option>
+                            <option value="115/111">
+                                <span>115/111</span>
+                            </option>
+                            <option value="115/112">
+                                <span>115/112</span>
+                            </option>
+                            <option value="115/113">
+                                <span>115/113</span>
+                            </option>
+                            <option value="116">
+                                <span>116</span>
+                            </option>
+                            <option value="116/1">
+                                <span>116/1</span>
+                            </option>
+                            <option value="116/114">
+                                <span>116/114</span>
+                            </option>
+                            <option value="117">
+                                <span>117</span>
+                            </option>
+                            <option value="117/114">
+                                <span>117/114</span>
+                            </option>
+                            <option value="117/115">
+                                <span>117/115</span>
+                            </option>
+                            <option value="118">
+                                <span>118</span>
+                            </option>
+                            <option value="118/115">
+                                <span>118/115</span>
+                            </option>
+                            <option value="118/116">
+                                <span>118/116</span>
+                            </option>
+                            <option value="119">
+                                <span>119</span>
+                            </option>
+                            <option value="119/116">
+                                <span>119/116</span>
+                            </option>
+                            <option value="120">
+                                <span>120</span>
+                            </option>
+                            <option value="120/116">
+                                <span>120/116</span>
+                            </option>
+                            <option value="120/117">
+                                <span>120/117</span>
+                            </option>
+                            <option value="121">
+                                <span>121</span>
+                            </option>
+                            <option value="121/1">
+                                <span>121/1</span>
+                            </option>
+                            <option value="121/118">
+                                <span>121/118</span>
+                            </option>
+                            <option value="121/119">
+                                <span>121/119</span>
+                            </option>
+                            <option value="121/120">
+                                <span>121/120</span>
+                            </option>
+                            <option value="123/120">
+                                <span>123/120</span>
+                            </option>
+                            <option value="124">
+                                <span>124</span>
+                            </option>
+                            <option value="126">
+                                <span>126</span>
+                            </option>
+                            <option value="126/1">
+                                <span>126/1</span>
+                            </option>
+                            <option value="126/123">
+                                <span>126/123</span>
+                            </option>
+                            <option value="128">
+                                <span>128</span>
+                            </option>
+                            <option value="131">
+                                <span>131</span>
+                            </option>
+                            <option value="62">
+                                <span>62</span>
+                            </option>
+                            <option value="65">
+                                <span>65</span>
+                            </option>
+                            <option value="66">
+                                <span>66</span>
+                            </option>
+                            <option value="68">
+                                <span>68</span>
+                            </option>
+                            <option value="69">
+                                <span>69</span>
+                            </option>
+                            <option value="70">
+                                <span>70</span>
+                            </option>
+                            <option value="71">
+                                <span>71</span>
+                            </option>
+                            <option value="72">
+                                <span>72</span>
+                            </option>
+                            <option value="73">
+                                <span>73</span>
+                            </option>
+                            <option value="74">
+                                <span>74</span>
+                            </option>
+                            <option value="75">
+                                <span>75</span>
+                            </option>
+                            <option value="76">
+                                <span>76</span>
+                            </option>
+                            <option value="77">
+                                <span>77</span>
+                            </option>
+                            <option value="78">
+                                <span>78</span>
+                            </option>
+                            <option value="79">
+                                <span>79</span>
+                            </option>
+                            <option value="80">
+                                <span>80</span>
+                            </option>
+                            <option value="81">
+                                <span>81</span>
+                            </option>
+                            <option value="82">
+                                <span>82</span>
+                            </option>
+                            <option value="83">
+                                <span>83</span>
+                            </option>
+                            <option value="84">
+                                <span>84</span>
+                            </option>
+                            <option value="85">
+                                <span>85</span>
+                            </option>
+                            <option value="86">
+                                <span>86</span>
+                            </option>
+                            <option value="87">
+                                <span>87</span>
+                            </option>
+                            <option value="88">
+                                <span>88</span>
+                            </option>
+                            <option value="88/86">
+                                <span>88/86</span>
+                            </option>
+                            <option value="89">
+                                <span>89</span>
+                            </option>
+                            <option value="89/87">
+                                <span>89/87</span>
+                            </option>
+                            <option value="90">
+                                <span>90</span>
+                            </option>
+                            <option value="90/88">
+                                <span>90/88</span>
+                            </option>
+                            <option value="91">
+                                <span>91</span>
+                            </option>
+                            <option value="92">
+                                <span>92</span>
+                            </option>
+                            <option value="93">
+                                <span>93</span>
+                            </option>
+                            <option value="94">
+                                <span>94</span>
+                            </option>
+                            <option value="94/92">
+                                <span>94/92</span>
+                            </option>
+                            <option value="95">
+                                <span>95</span>
+                            </option>
+                            <option value="95/93">
+                                <span>95/93</span>
+                            </option>
+                            <option value="96">
+                                <span>96</span>
+                            </option>
+                            <option value="97">
+                                <span>97</span>
+                            </option>
+                            <option value="97/95">
+                                <span>97/95</span>
+                            </option>
+                            <option value="98">
+                                <span>98</span>
+                            </option>
+                            <option value="98/96">
+                                <span>98/96</span>
+                            </option>
+                            <option value="99">
+                                <span>99</span>
+                            </option>
+                            <option value="99/97">
+                                <span>99/97</span>
+                            </option>
+                            <option value="99/98">
+                                <span>99/98</span>
+                            </option>
+                </select>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-lg-2">    
+        <div class="vitesse">
+            <p>Vitesse:</p>
+            <div class="form-group">
+                <select class="form-control" id="exampleFormControlSelect1">
+                        <option value="">
+                                <span>Vitesse</span>
+                            </option>
+                            <option value="H">
+                                <span>H</span>
+                            </option>
+                            <option value="K">
+                                <span>K</span>
+                            </option>
+                            <option value="L">
+                                <span>L</span>
+                            </option>
+                            <option value="M">
+                                <span>M</span>
+                            </option>
+                            <option value="N">
+                                <span>N</span>
+                            </option>
+                            <option value="P">
+                                <span>P</span>
+                            </option>
+                            <option value="Q">
+                                <span>Q</span>
+                            </option>
+                            <option value="R">
+                                <span>R</span>
+                            </option>
+                            <option value="S">
+                                <span>S</span>
+                            </option>
+                            <option value="T">
+                                <span>T</span>
+                            </option>
+                            <option value="V">
+                                <span>V</span>
+                            </option>
+                            <option value="W">
+                                <span>W</span>
+                            </option>
+                            <option value="Y">
+                                <span>Y</span>
+                            </option>
+                            <option value="Z">
+                                <span>Z</span>
+                            </option>
+                </select>
+            </div>
+        </div>
+    </div>     
+</div>
+
+    <div class="buttons">
+                
+        <button type="button" class="btn btn-outline-danger btn-lg">Annuler</button>
+
+        <input class="btn btn-primary btn-lg btn-warning" type="submit" value="Valider">
+
+    </div>
+            
+        
+    </div>
+    </section>   
 
 
 
 
+      
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
