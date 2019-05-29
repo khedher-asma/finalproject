@@ -1,0 +1,136 @@
+body
+{
+    font-family: sans-serif; 
+    font-size: 16px;
+    color: #212529;
+    background-color: #eaeded;   
+}
+
+h1
+{
+    text-align: center;     
+}
+.greyColor
+{
+    color: #212529; 
+}
+
+/*.box1
+{
+    border: 1px solid black ; 
+}
+.box2
+{
+    border: 1px solid yellow ; 
+}
+.motherbox
+{
+    border: 1px solid red ; 
+}
+.thisrowborder
+{
+    border: 1px solid silver; 
+}*/
+
+@media (max-width: 991.5px) { 
+    .collapsedBox
+    {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .cashLigne
+    {   
+        border-bottom: 1px solid #212529;
+        width: 50%; 
+        justify-items: center;  
+    }
+    .dropdownHidden
+    {
+        display: none;
+    }
+  
+
+}
+
+
+@media (min-width: 991.5px) { 
+    .cashLigne 
+    {   
+        display: none; 
+    }
+    .hiddenInLg
+    {
+        display: none; 
+    }
+
+}
+
+
+
+.container-fluid
+{
+    padding: 0px !important; 
+}
+.fbox
+{   
+    /*border: 1px solid orange;*/ 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.dropdown-toggle::after {
+    display:none;
+}
+/******************************* section intruduction slide*****************************************************************************************/
+.sectionIntroductionSlide
+{
+    
+    margin-top: 40px; 
+     
+}
+.searchBar
+{
+    position: absolute; 
+    top: 30; 
+    right: 30; 
+}
+.sameWidthAndHeight
+{
+    height: 400px; 
+}
+.carousel-control-prev-icon {
+    /*background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffc107' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");*/
+    display: none;
+}
+
+.carousel-control-next-icon {
+    /*background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffc107' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");*/
+    display: none;
+}
+.carousel-indicators > li,
+.carousel-indicators > li.active{
+    width: 42px;
+    height: 21px;    
+    background: #ffc107;
+    
+}
+.carousel-indicators > li.active {
+    background: #ff9100;
+}
+@media (min-width: 991.5px){
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+}
+@media (max-width: 991.5px){
+    .card-img-top {
+        width: 100%;
+        height: 30vw;
+        object-fit: cover;
+    }
+}
+/**************************************************************************************************************/
+
