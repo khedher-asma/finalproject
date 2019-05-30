@@ -174,11 +174,15 @@ div.scrollmenu {
     margin: 0px auto; 
 
 }
+.colorgray
+{
+    background-color: #3a3a3a;
+}
 /****************************************************footer***************************************************/
 footer
 {
     color: white; 
-    background-color: #3a3a3a;
+    background-color: black;
 }
 .parag1
 {
@@ -195,18 +199,16 @@ footer
 {
     height:16px; 
     width: 14.857142857143px;
+    color: gray; 
 }
 ul{
     list-style: none;
 }
-.horizentalbar1 
-{
-    height: 1px;
-    color: gray;
-    background-color: gray;
-    border: none;
-    }
 .infoLine
 {
     padding: 0; 
+}
+.grey
+{
+    fill: gray; 
 }
