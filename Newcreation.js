@@ -8,4 +8,7 @@ function categ(){
     if (categorie.value == "Pneu"){
         pneu.style.display= 'flex'
    }
+   else{
+    pneu.style.display= 'none'
+   }
 }
