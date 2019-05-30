@@ -10,27 +10,30 @@ body{
 .bgd-white-color{
     background-color: white;
 }
-select{
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border: none;
- }
+
  .border-orange{
      border: 1px solid #ffc107;
  }
-
-/* img{
-    height: 150px;
-    width: 100%; 
-    display: block;
-} */
-.width-prix{
-    width: 80px;
-    color: #495057;
+ .select-width select{
+     width: 120px;
+ }
+ .wdth{
+     width:125px;
+ }
+.prix-style{
+    position: absolute;
+    top:0;
+    width:7rem;
+    height:2rem;
+    text-align: center;
+    background-color:#ffc107;
+    border-radius:4px;
+    padding: 5px;
+    transition: width 300ms ease-in-out;
 }
-.localisation{
-    width: 120px;
-    color: #495057;
-
+.img-height  img{
+    height: 15em;
+}
+.forHidden{
+    display: none;
 }
