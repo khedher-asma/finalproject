@@ -132,5 +132,81 @@ h1
         object-fit: cover;
     }
 }
-/**************************************************************************************************************/
+/******************************************a la une********************************************************************/
+div.scrollmenu {
+    background-color: #eaeded;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+  
+.card1{
+    display: inline-block;
+    
+    
+  }
+  
+/*div.scrollmenu .card:hover {
+    background-color: #777;
+  }*/
+.aLaUne
+{
+    /*border: 1px solid black; */
+}
+.alauneText
+{
+    /*border: 1px solid red; */
+    text-align: center;
+    background-color: #ffc107; 
+    
+}
+.newstext
+{
+    font-size: 1.5rem; 
+}
+/*.scrollmenu
+{
+    border: 1px solid yellow; 
+}*/
+.sameWidthAndHeight3
+{
+    width: 100%;
+    margin: 0px auto; 
 
+}
+/****************************************************footer***************************************************/
+footer
+{
+    color: white; 
+    background-color: #3a3a3a;
+}
+.parag1
+{
+    text-align: justify;
+    text-justify: inter-word;
+    
+}
+.colorgrey
+{
+    color: gray; 
+    font-size: 14px; 
+}
+.mk-svg-icon
+{
+    height:16px; 
+    width: 14.857142857143px;
+}
+ul{
+    list-style: none;
+}
+.horizentalbar1 
+{
+    height: 1px;
+    color: gray;
+    background-color: gray;
+    border: none;
+    }
+.infoLine
+{
+    padding: 0; 
+}
