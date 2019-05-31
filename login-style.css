@@ -54,4 +54,8 @@ margin-top: 50px;
         font-size:1rem !important;
 
     }
+    #sign-btn{
+        font-size: 0.7rem !important;
+        font-weight: normal !important;
+    }
 }
