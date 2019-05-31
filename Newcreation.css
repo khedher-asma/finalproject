@@ -63,3 +63,39 @@
     -moz-transition: all 0.2s;
     transition: all 0.2s;
 }
+
+
+
+footer
+{
+    color: white; 
+    background-color: black;
+}
+.parag1
+{
+    text-align: justify;
+    text-justify: inter-word;
+    
+}
+.colorgrey
+{
+    color: gray; 
+    font-size: 14px; 
+}
+.mk-svg-icon
+{
+    height:16px; 
+    width: 14.857142857143px;
+    color: gray; 
+}
+ul{
+    list-style: none;
+}
+.infoLine
+{
+    padding: 0; 
+}
+.grey
+{
+    fill: gray; 
+}
