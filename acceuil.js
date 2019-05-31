@@ -13,3 +13,31 @@ function sendForm()
     
 
 }
+
+var elem = document.getElementById('mySearchButton'); 
+console.log(elem.getBoundingClientRect());
+var yposition = elem.getBoundingClientRect().y; 
+window.onscroll = function() {scrollFunction()};
+document.getElementById("mySearchButton1").style.display = "none";
+
+
+function scrollFunction() {
+    var yposition = elem.getBoundingClientRect().y;
+    var xposition= elem.getBoundingClientRect().x; 
+    if (document.body.scrollTop > yposition+213 || document.documentElement.scrollTop > yposition+213) {
+    document.getElementById("mySearchButton1").style.display = "block";
+    
+
+
+  } else {
+      document.getElementById("mySearchButton1").style.display = "none";
+   
+    }
+ }
+ 
+function hide()
+ {
+     
+    document.getElementById("mySearchButton1").style.display = "none";
+  
+ }

@@ -7,7 +7,8 @@
     <title>Cash for junkies</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <script src="acceuil.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    
     
 
 </head>
@@ -56,22 +57,72 @@
                                     </ul>
                                     <div class="cashLigne"></div>
                                     <ul class="navbar-nav ">
+                    <div class="box1 col-lg-2 col-sm-6 col-md-6 col-6 ">
+                        <a class="navbar-brand" href="#"> <strong class="greyColor" >Ferraille.tn</strong> </a>
+                    </div>
+                    <button class="navbar-toggler ml-auto " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+                            <span class="navbar-toggler-icon"  id='hidesearch1' onclick="hide()"></span><!--rym-->
+                    </button>
+                    <div class="container-fluid box2 col-lg-8 offset-lg-2  col-sm-6 col-md-6 col-6 "> <!--offset-sm-6 offset-6 offset-md-6 najmou ndizzou le contenu ta3 toggle 3la issar bilkol-->
+                        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                            <div class="container-fluid thisrowborder d-lg-flex justify-content-lg-end collapsedBox">
+                                <div class="nav-item dropdown mx-2 dropdownHidden">
+                                    <a class="nav-link  dropdown-toggle" href="#"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <strong class="greyColor">Navigation</strong>  
+                                    </a>  
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="nav-link" style="text-align: center" href="#"><strong class="greyColor">Piece Auto/Auto</strong></a> <!--why? it dont work in css with class selector-->
+                                        <a class="nav-link" style="text-align: center" href="#"><strong class="greyColor">Piece Moto/Moto</strong></a><!--why? it dont work in css with class selector-->
+                                        <a class="nav-link" style="text-align: center" href="#"><strong class="greyColor">Electromenager/Piece Electrique</strong></a>
+                                        <a class="nav-link" style="text-align: center" href="#"><strong class="greyColor">Pneux</strong></a>
+                                        <a class="nav-link" style="text-align: center" href="#"><strong class="greyColor">Dechet Plastique et Métaux</strong></a>
+                                    </div>
+                                </div>
+                                
+                                    <ul class="navbar-nav hiddenInLg">
                                         <li class="nav-item mx-2">
-                                            <a class="nav-link " style="text-align: center"   href="#seeUs"><strong class="greyColor">Communiquez Nous</strong></a><!--why? it dont work in css with class selector-->
-                                        </li>
-                                        <li class="nav-item mx-2">
-                                            <a class="nav-link " style="text-align: center" href="#"><strong class="greyColor">Crée une Annonce</strong></a><!--why? it dont work in css with class selector-->
+                                            <a class="nav-link " style="text-align: center" href="#"><strong class="greyColor">Piece Auto/Auto</strong></a><!--why? it dont work in css with class selector-->
                                         </li>         
                                         <li class="nav-item mx-2">
-                                            <a class="nav-link " style="text-align: center" href="#"><strong class="greyColor">Se Connecter</strong></a>
+                                            <a class="nav-link " style="text-align: center" href="#"><strong class="greyColor">Piece Moto/Moto</strong></a></a>
+                                        </li>
+                                        <li class="nav-item mx-2">
+                                            <a class="nav-link " style="text-align: center" href="#"><strong class="greyColor">Electromenager/Piece Electrique</strong></a></a>
                                         </li> 
-                                    </ul>
-                                </div>
+                                        <li class="nav-item mx-2">
+                                            <a class="nav-link " style="text-align: center" href="#"><strong class="greyColor">Pneux</strong></a></a>
+                                        </li> 
+                                        <li class="nav-item mx-2">
+                                                <a class="nav-link " style="text-align: center" href="#"><strong class="greyColor">Dechet Plastique et Métaux</strong></a>
+                                        </li>
+                                </ul>
+                                <div class="cashLigne"></div>
+                                <ul class="navbar-nav ">
+                                    <li class="nav-item mx-2">
+                                        <a class="nav-link " style="text-align: center"   href="#seeUs"><strong class="greyColor">Communiquez Nous</strong></a><!--why? it dont work in css with class selector-->
+                                    </li>
+                                    <li class="nav-item mx-2">
+                                        <a class="nav-link " style="text-align: center" href="#"><strong class="greyColor">Crée une Annonce</strong></a><!--why? it dont work in css with class selector-->
+                                    </li>         
+                                    <li class="nav-item mx-2">
+                                        <a class="nav-link " style="text-align: center" href="#"><strong class="greyColor">Se Connecter</strong></a>
+                                    </li> 
+                                </ul>
                             </div>
                         </div>
+                    </div>
+                <section class="boutonFixer">
+                    <div class="fixedsearchbutton " id="mySearchButton1">
+                        <form action="" class="searchbutton1">
+                            <input type="search" class="research1" placeholder="cherchez et économisez">
+                            <i class="fa fa-search icon1"></i>
+                        </form>
+                <div>
+                </section>
             </nav>
     </header>
     <main>
+        
         <section class="sectionIntroductionSlide fbox">
             <div id="carouselExampleIndicators" class="carousel slide container-fluid" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -81,13 +132,13 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                    <img class="d-block w-100 sameWidthAndHeight" src="banner-car-for-scrap-01.png" alt="First slide">
+                    <img class="d-block w-100 sameWidthAndHeight" src="images/banner-car-for-scrap-01.png" alt="First slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100 sameWidthAndHeight" src="secondPictures.jpg" alt="Second slide">
+                        <img class="d-block w-100 sameWidthAndHeight" src="images/secondPictures.jpg" alt="Second slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100 sameWidthAndHeight" src="thirdone.jpg" alt="Third slide">
+                        <img class="d-block w-100 sameWidthAndHeight" src="images/thirdone.jpg" alt="Third slide">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -99,53 +150,98 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-            <div class="container-fluid fbox searchBar">
-                <form class="form-inline fbox ">
+            <!--div class="container-fluid fbox searchBar">
+                <form class="form-inline fbox" id="searchFrom">
                     <input class="form-control mr-sm-2" type="search" placeholder="Commencez et Economisez" aria-label="Search">
                     <button class="btn btn-warning  my-2 my-sm-0"  type="submit">Search</button>
                 </form>  
-            </div>
+            </div-->
+             
+                <div class="fixedsearchbutton boutonFixer" id="mySearchButton">
+                    <form action="" class="searchbutton">
+                        <input type="search" class="research" placeholder="cherchez et économisez">
+                        <i class="fa fa-search icon"></i>
+                    </form>
+                <div>
+                
         </section>
         <section class="partYouCanFindInJunkies">
-            <div class="container">
+            <div class="container largeshow1">
                 <div class="card-group">
-                    <div class="row mx-2 mt-3">
-                        <div class="card p-2 mt-2 col-lg-4 col-md-4 col-sm-12 col-12">
-                            <img class="card-img-top sameWidthAndHeight1" src="carparts.jpg" alt="Card image cap">
+                   
+                        <div class="card p-2 mt-2 col-lg-4 offset-lg-4 ">
+                            <img class="card-img-top sameWidthAndHeight1" src="images/carparts.jpg" alt="Card image cap">
                             <div class="card-body ">
                                 <h5 class="card-title text-center">Piece auto</h5>                                            
                             </div>
                         </div>
-                        <div class="card p-2 mt-2 col-lg-4 offset-lg-4 offset-md-4 col-md-4 col-sm-12 col-12">
-                            <img class="card-img-top sameWidthAndHeight1" src="moto.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title text-center">Piece moto</h5>
-                                    
-                            </div>
+                   
+                    <div class="row mx-2 ">
+                        <div class="card p-2 mt-2 col-lg-4">
+                                <img class="card-img-top sameWidthAndHeight1" src="images/moto.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Piece moto</h5>        
+                                </div>
                         </div>
-                        <div class="card p-2 mt-2 col-lg-4 col-md-4  col-sm-12 col-12">
-                            <img class="card-img-top sameWidthAndHeight1" src="electrominager.jpg" alt="Card image cap">
+                        <div class="card p-2 mt-2 col-lg-4 ">
+                            <img class="card-img-top sameWidthAndHeight1" src="images/electrominager.jpg" alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title text-center">Electromenager</h5>
                                                         
                             </div>
                         </div>
-                        <div class="card p-2 mt-2 col-lg-4 col-md-4 offset-lg-4 offset-md-4 col-sm-12 col-12">
-                                <img class="card-img-top sameWidthAndHeight2" src="tires.jpg" alt="Card image cap">
+                        <div class="card p-2 mt-2 col-lg-4">
+                                <img class="card-img-top sameWidthAndHeight2" src="images/tires.jpg" alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title text-center">Pneux</h5>
                                                 
                                 </div>
                         </div>
-                        <div class="card p-2 mt-2 col-lg-4 offset-lg-4 col-md-4 offset-md-4 col-sm-12 col-12">
-                                <img class="card-img-top sameWidthAndHeight2" src="metalplasticwaste.jpg" alt="Card image cap">
+                    </div>
+                        <div class="card p-2 mt-2 col-lg-4 offset-lg-4 ">
+                                <img class="card-img-top sameWidthAndHeight2" src="images/metalplasticwaste.jpg" alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title text-center">Matiére pour recyclage</h5>
                                                             
                                 </div>
                         </div>
-                    </div>
+                </div>
 
+            </div>    
+            <div class="container largeshow2">
+                <div class="card-group">
+                    <div class="row mx-2 mt-3 ">
+                        <div class="card p-2 mt-2 col-md-6 col-sm-12 col-12">
+                            <img class="card-img-top sameWidthAndHeight1" src="images/carparts.jpg" alt="Card image cap">
+                            <div class="card-body ">
+                                <h5 class="card-title text-center">Piece auto</h5>                                            
+                            </div>
+                        </div>
+                        <div class="card p-2 mt-2 col-md-6 col-sm-12 col-12">
+                            <img class="card-img-top sameWidthAndHeight1" src="images/moto.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Piece moto</h5>                    
+                            </div>
+                        </div>
+                        <div class="card p-2 mt-2 col-md-6  col-sm-12 col-12">
+                            <img class="card-img-top sameWidthAndHeight1" src="images/electrominager.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Electromenager</h5>                                                        
+                            </div>
+                        </div>
+                        <div class="card p-2 mt-2 col-md-6 col-sm-12 col-12">
+                                <img class="card-img-top sameWidthAndHeight2" src="images/tires.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Pneux</h5>                                                
+                                </div>
+                        </div>
+                        <div class="card p-2 mt-2 col-md-6 offset-md-3 col-sm-12 col-12">
+                                <img class="card-img-top sameWidthAndHeight2" src="images/metalplasticwaste.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Matiére pour recyclage</h5>                            
+                                </div>
+                        </div>
+                    </div>
                 </div>    
             </div>      
         </section>
@@ -155,7 +251,7 @@
                     <!---------------------------------------------------------------------------------------------------------------->
                     <div class="scrollmenu mt-2 mt-md-2 mt-sm-2 mt-lg-0 col-lg-8 offset-lg-2 ">                        
                         <div class="card card1 mb-4 box-shadow">
-                            <img src="pneu.jpg" class="p-3 sameWidthAndHeight3">
+                            <img src="images/pneu.jpg" class="p-3 sameWidthAndHeight3">
                             <div class="card-body bgd-grey-color">
                                 <div class="card-text mb-2">Pneu<span class="description">GOODYEAR 205/55R16 91V</span>
                                 </div>
@@ -170,7 +266,7 @@
                             </div>
                         </div>
                           <div class="card card1 mb-4 box-shadow">
-                                <img src="pneu.jpg" class="p-3 sameWidthAndHeight3">
+                                <img src="images/pneu.jpg" class="p-3 sameWidthAndHeight3">
                                 <div class="card-body bgd-grey-color">
                                     <div class="card-text mb-2">Pneu<span class="description">GOODYEAR 205/55R16 91V</span>
                                     </div>
@@ -185,7 +281,7 @@
                             </div>
                         </div>
                         <div class="card card1 mb-4 box-shadow">
-                            <img src="pneu.jpg" class="p-3 sameWidthAndHeight3">
+                            <img src="images/pneu.jpg" class="p-3 sameWidthAndHeight3">
                             <div class="card-body bgd-grey-color">
                                 <div class="card-text mb-2">Pneu<span class="description">GOODYEAR 205/55R16 91V</span>
                                 </div>
@@ -200,7 +296,7 @@
                             </div>
                         </div>
                         <div class="card card1 mb-4 box-shadow">
-                                <img src="pneu.jpg" class="p-3 sameWidthAndHeight3">
+                                <img src="images/pneu.jpg" class="p-3 sameWidthAndHeight3">
                             <div class="card-body bgd-grey-color">
                                 <div class="card-text mb-2">Pneu<span class="description">GOODYEAR 205/55R16 91V</span>
                                 </div>
@@ -213,15 +309,13 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                               
-                        
+                        </div>       
                     </div>
                 </div>
             </div>              
         </section>
         <section class="colorgray">
-                <div class="container" id="seeUs">
+                <div class="container" >
                         <div class="row">
                             <div class="parag1 mt-5 col-lg-6">
                                 <h3>A propos de ferraille.tn</h3>
@@ -251,7 +345,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="NousCommuniquer mt-5 col-lg-6" data-spy="scroll" data-target="navbar">
+                            <div class="NousCommuniquer mt-5 col-lg-6" id="seeUs" data-spy="scroll" data-target="navbar">
                                 <h3>Communiquez Nous</h3>
                                 <span class="mt-3 colorgrey">
                                     <form name="myForm" action="#">
@@ -275,13 +369,12 @@
     </main>  
     <!------------------------------------------------footer--------------------------------------------------------->  
     <footer>
-        
         <div class="container textcopyright text-center">
             <p class="colorgrey">ferraille.tn All right reserved 2019</p>
 
         </div>
-        </footer>
-
+    </footer>
+    <script src="acceuil.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
