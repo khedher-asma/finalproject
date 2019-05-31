@@ -34,6 +34,7 @@ body{
 .img-height  img{
     height: 15em;
 }
-.forHidden{
-    display: none;
+.tooltip{
+    background-color: #ffc107!important;
 }
+ 

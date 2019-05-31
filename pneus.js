@@ -1,4 +1,4 @@
-let pneu = [
+let pneus = [
   {
     "index": 0,
     "image": "https://www.pneu-collection.fr/1398-large_default/pneu-michelin-135-r-400-x.jpg",
@@ -6,7 +6,7 @@ let pneu = [
     "marque": "GOODYEAR",
     "phone": "+216 53000001",
     "address": "Sousse",
-    "description": "un pneu bon occasion utiliser 3mois",
+    "description": "un pneu bon occasion utilisé 3mois",
     "largeur": 205,
     "hauteur": 55,
     "diametre": 16,
@@ -48,7 +48,7 @@ let pneu = [
     "marque": "NEXEN",
     "phone": "+216 53000004",
     "address": "Sfax",
-    "description": "2 pneu bon occasion utiliser 12 mois",
+    "description": "2 pneus bon occasion utilisés 12 mois",
     "largeur": 160,
     "hauteur": 30,
     "diametre": 14,
@@ -76,7 +76,7 @@ let pneu = [
     "marque": "UNIROYALL",
     "phone": "+216 53000006",
     "address": "Bizert",
-    "description": "2 pneu bon occasion ",
+    "description": "2 pneus bon occasion ",
     "largeur": 7.5,
     "hauteur": 10.5,
     "diametre": 415,
@@ -90,7 +90,7 @@ let pneu = [
     "marque": "WATERFALL",
     "phone": "+216 53000001",
     "address": "sousse",
-    "description": "4 pneu utilisés 12mois",
+    "description": "4 pneus utilisés 12mois",
     "largeur": 5.5,
     "hauteur": 60,
     "diametre": 40,
@@ -104,7 +104,7 @@ let pneu = [
     "marque": "GOODYEAR",
     "phone": "+216 53000001",
     "address": "sousse",
-    "description": "bon occasion utiliser 3mois",
+    "description": "bon occasion utilisé 3mois",
     "largeur": 6,
     "hauteur": 90,
     "diametre": 400,
@@ -117,16 +117,23 @@ function generateDiv(cardContainer, data) {
 
     let column = document.createElement("div")  //div =>col-sm-6 col-md-3
     let attColumn = document.createAttribute("class")  //Create a "class" attribute
-    attColumn.value = "col-sm-6 col-md-3 py-3 hoverEffect"  //Set the value of the class attribute
+    attColumn.value = "col-sm-6 col-md-3 py-3"  //Set the value of the class attribute
     column.setAttributeNode(attColumn) // Add the class attribute to column
+    let attColumn2 = document.createAttribute("id")
+    attColumn2.value = "article" + element.index
+    column.setAttributeNode(attColumn2)
 
-    let forHidden=document.createElement("div")
-    let attForHidden=document.createAttribute("class")
-    attForHidden.value="forHidden"
-    forHidden.setAttributeNode(attForHidden)
-    let textHidden=document.createTextNode(element.index)
-    forHidden.appendChild(textHidden)
+    let atthover1 = document.createAttribute("data-toggle")
+    atthover1.value = "tooltip"
+    column.setAttributeNode(atthover1)
 
+    let atthover2 = document.createAttribute("data-placement")
+    atthover2.value = "auto"
+    column.setAttributeNode(atthover2)
+
+    let atthover3 = document.createAttribute("title")
+    atthover3.value = element.description
+    column.setAttributeNode(atthover3)
 
     let divCard = document.createElement("div")//card div
     let attCard = document.createAttribute("class")
@@ -176,17 +183,9 @@ function generateDiv(cardContainer, data) {
     divCard.appendChild(image)//image
     divCard.appendChild(cardBody)//card body
     divCard.appendChild(cardPrix)//cardprix
-    column.appendChild(forHidden)
     column.appendChild(divCard)//card div
     cardContainer.appendChild(column)//main div
   }
 }
 let cardContainer = document.querySelector("div.mainDiv")
-generateDiv(cardContainer, pneu)
-
-let hoverElement = document.getElementsByClassName("hoverEffect")
-for (let elt of hoverElement) {
-  let asma=elt.getElementsByClassName("forHidden")
-  elt.addEventListener(mousemove)
-
-}
+generateDiv(cardContainer, pneus)
