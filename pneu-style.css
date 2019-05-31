@@ -1,5 +1,6 @@
 *{
     box-sizing:border-box;
+    font-size: 15px;
 }
 body{
     color: #212529;
@@ -15,10 +16,10 @@ body{
      border: 1px solid #ffc107;
  }
  .select-width select{
-     width: 120px;
+     width: 110px;
  }
  .wdth{
-     width:125px;
+     width:110px;
  }
 .prix-style{
     position: absolute;
